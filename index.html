@@ -152,7 +152,54 @@
                 
             </div>
         </div>
-        <div class="row" id="reservation">
+        <div class="row row-content" id="reservation">
+            <div class="col-xs-12 col-sm-3">
+                <p style="padding:20px;"></p>
+                <h3>Reserve a Table</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="guests" class="col-sm-2 control-label">Number of Guests</label>
+                        <div class="col-sm-10">
+                            <label class="radio-inline"><input type="radio"  name="guests">1</label>
+                            <label class="radio-inline"><input type="radio"  name="guests">2</label>
+                            <label class="radio-inline"><input type="radio"  name="guests">3</label> 
+                            <label class="radio-inline"><input type="radio"  name="guests">4</label>
+                            <label class="radio-inline"><input type="radio"  name="guests">5</label>
+                            <label class="radio-inline"><input type="radio"  name="guests">6</label>
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <label for="date_time" class="col-sm-2 control-label">Date and Time</label>
+                            <div class="col-sm-10 form-inline" id="date_time">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group has-feedback">
+                                            <label class="control-label sr-only" for="date">Date</label>
+                                            <input type="text" class="form-control" id="date" placeholder="Date" aria-describedby="gl_date"><span class="glyphicon glyphicon-calendar form-control-feedback" aria-hidden="true"></span>
+                                            <span id="gl_date" class="sr-only">(date)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-sm-offset-1">
+                                        <div class="form-group has-feedback">
+                                            <label class="control-label sr-only" for="time">Time</label>
+                                            <input type="text" class="form-control" id="date" placeholder="Time" aria-describedby="gl_time">
+                                            <span class="glyphicon glyphicon-time form-control-feedback" aria-hidden="true"></span>
+                                            <span id="gl_time" class="sr-only">(time)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Reserve</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
         </div>
     </div>
 
