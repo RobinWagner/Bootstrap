@@ -46,3 +46,47 @@
         }
     }
 }
+
+.navbar-inverse {
+    background: @indigo;
+    color: @white;
+    .navbar-nav > .active > a {
+        background: @dark-indigo;
+        color: @white;
+        &:hover {
+            background: @dark-indigo;
+            color: @white;
+        }
+        &:focus {
+            background: @dark-indigo;
+            color: @white;
+        }
+    }
+    .navbar-nav > .open > a {
+        background: @dark-indigo;
+        color: @white;
+        &:hover {
+            background: @dark-indigo;
+            color: @white;
+        }
+        &:focus {
+            background: @dark-indigo;
+            color: @white;
+        }
+    }
+    .navbar-nav {
+        .open {
+            .dropdown-menu > li > a {
+                background-color: @indigo;
+                color: @off-white;
+                &:hover {
+                    color: #000000;
+                }
+            }
+            .dropdown-menu {
+                background-color: @indigo;
+                color: @off-white;
+            }
+        }
+    }
+}
